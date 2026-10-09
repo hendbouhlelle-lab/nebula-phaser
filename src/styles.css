@@ -1,0 +1,22 @@
+*{box-sizing:border-box}body{margin:0;font-family:'Trebuchet MS',system-ui,sans-serif;color:#eaf2ff;background:radial-gradient(circle at 20% 0,#2b2f7a,#0a0d26 60%) fixed;min-height:100vh}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 24px}.logo{font-weight:800;font-size:22px;letter-spacing:2px;color:#6ee7ff}.sub{opacity:.6;font-size:13px}
+main{max-width:1000px;margin:0 auto;padding:12px}
+.panel{background:rgba(255,255,255,.07);border:1px solid rgba(110,231,255,.25);border-radius:22px;padding:24px;backdrop-filter:blur(8px)}.center{text-align:center}
+h1{font-size:56px;margin:8px 0;background:linear-gradient(90deg,#6ee7ff,#ff7ad9,#ffe066);-webkit-background-clip:text;color:transparent}
+.btn{display:inline-block;margin:8px;padding:14px 28px;font-size:18px;font-weight:700;border:0;border-radius:40px;color:#0a0d26;background:linear-gradient(90deg,#6ee7ff,#8ef0b4);cursor:pointer;transition:transform .15s}
+.btn:hover:not(:disabled){transform:scale(1.06)}.btn:disabled{opacity:.35;cursor:not-allowed}.btn.alt{background:linear-gradient(90deg,#ff7ad9,#ffe066)}
+.btn.ghost{background:transparent;color:#eaf2ff;border:1px solid rgba(255,255,255,.35)}
+.game-canvas{width:100%;border-radius:22px;border:2px solid rgba(110,231,255,.4);box-shadow:0 0 40px rgba(110,231,255,.2);display:block}
+.playwrap{position:relative}.cam{position:relative;width:min(100%,520px);margin:0 auto;aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:#000}
+.cam video,.cam canvas{position:absolute;inset:0;width:100%;height:100%;transform:scaleX(-1);object-fit:cover}
+.cam-small{position:absolute;right:12px;bottom:12px;width:180px;margin:0;opacity:.9;border:2px solid #6ee7ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0}
+.card{background:rgba(255,255,255,.08);border-radius:16px;padding:14px}.card small{display:block;opacity:.7}.card strong{font-size:30px;color:#ffe066}
+.bar{margin:12px 0}.bar-top{display:flex;justify-content:space-between}.track{height:16px;background:rgba(255,255,255,.12);border-radius:10px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,#6ee7ff,#ff7ad9);border-radius:10px;transition:width .8s}
+.trend{display:flex;gap:18px;align-items:flex-end;height:210px}.tcol{display:flex;flex-direction:column;align-items:center;gap:4px}.tbar{width:48px;border-radius:10px 10px 0 0;background:linear-gradient(#ff7ad9,#6ee7ff)}
+.note{font-size:13px;opacity:.7;font-style:italic}
+.hidden{display:none!important}
+#game-root{width:100%;max-width:960px;margin:0 auto;aspect-ratio:16/9}
+#game-root canvas{border-radius:22px;border:2px solid rgba(110,231,255,.4);box-shadow:0 0 40px rgba(110,231,255,.2)}
+.cam{margin:0 auto 14px}
+.cam.cam-small{position:fixed;right:14px;bottom:14px;width:190px;margin:0;z-index:5;border:2px solid #6ee7ff}
